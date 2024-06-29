@@ -54,6 +54,21 @@ def connect_to_mongo(db_name, search_criteria, output_file_name):
         print('Connected to MongoDB')
         collection = db[COLLECTION_NAME]
 
+        '''
+        We are interested in the following fields:
+        - _id
+        - experiment_name
+        - solvents (CB, DCB, TOL)
+        - annealing_temperature
+        - conductivity
+        - thickness
+        
+        Given all the experiments, we are interested in the ones that have the search_criteria in the experiment_name field.
+        We first pull all the matched documents and then extract the fields we are interested in.
+        While some fields can be pulled directly, others require some processing. E.g., the solvents field is an array of dictionaries.
+        Processing logic for these complex fields have been implemented in the process_solvents, process_conductivity, and process_thickness functions.
+        
+        '''
         for doc in collection.find():
             if search_criteria in doc.get('experiment_name'):
                 row = []

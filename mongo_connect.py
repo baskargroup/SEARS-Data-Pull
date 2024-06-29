@@ -79,7 +79,7 @@ def connect_to_mongo(db_name, search_criteria, output_file_name):
                 row.append(process_conductivity(doc.get('conductivity')))
                 row.append(process_thickness(doc.get('thickness')))
 
-                # Append to DataFrame and index is false
+                # Append to DataFrame
                 df.loc[len(df)] = row
 
         # Create a text file with just the experiment ids. These are then used to download the files from Digital Ocean for each experiment
@@ -87,7 +87,7 @@ def connect_to_mongo(db_name, search_criteria, output_file_name):
             for exp_id in df['exp_id']:
                 file.write(str(exp_id) + '\n')
 
-        # Save DataFrame to CSV
+        # Save DataFrame to CSV file for downstream ML. Index is set to False to avoid writing the row numbers to the file.
         df.to_csv(output_file_name, index=False)
 
     except Exception as e:

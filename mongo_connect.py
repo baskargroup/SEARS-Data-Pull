@@ -68,6 +68,9 @@ def connect_to_mongo(db_name, search_criteria, output_file_name):
         While some fields can be pulled directly, others require some processing. E.g., the solvents field is an array of dictionaries.
         Processing logic for these complex fields have been implemented in the process_solvents, process_conductivity, and process_thickness functions.
         
+        We need to use the find() method with a query to filter the results. This is more efficient than pulling all the documents and then filtering them.
+        Ref: https://docs.mongodb.com/manual/reference/method/db.collection.find/
+        
         '''
         for doc in collection.find():  # Note that this is not efficient for large datasets. We should use the find() method with a query to filter the results.
             if search_criteria in doc.get('experiment_name'):

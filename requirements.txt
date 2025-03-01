@@ -2,3 +2,4 @@ pandas
 pymongo
 dotenv
 boto
+python-dotenv

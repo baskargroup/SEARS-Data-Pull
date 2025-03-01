@@ -40,7 +40,7 @@ def connect_to_mongo(db_name, search_criteria, output_file_name):
     load_dotenv(find_dotenv())
 
     # MONGODB
-    MONGODB_HOST = 'mongodb+srv://rtali:vqPi8ORyWQJGdJbs@isu.wet0vxf.mongodb.net/?appName=ISU'
+    MONGODB_HOST = os.getenv("CONN_STRING")
     COLLECTION_NAME = 'productData'
 
     # Create a DataFrame

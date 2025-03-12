@@ -1,7 +1,7 @@
 # SEARS SDK to Query MongoDB using Python to Download Data and Files from SEARS Backend.
 
 ## Main SEARS platform
-Please refer to our main SEARS platform repository [here](https://github.com/baskargroup/SEARS/)
+Please refer to our main SEARS platform repository [here](https://github.com/baskargroup/SEARS/).
 
 ## Steps to pull data.
 

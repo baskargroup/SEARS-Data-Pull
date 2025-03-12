@@ -1,5 +1,8 @@
 # SEARS SDK to Query MongoDB using Python to Download Data and Files from SEARS Backend.
 
+## Main SEARS platform
+Please refer to our main SEARS platform repository [here](https://github.com/baskargroup/SEARS/)
+
 ## Steps to pull data.
 
 0. Copy the `.env` file to the root directory of the project. Update the connection string to use your own MongoDB Atlas connection string. Also update the AWS S3 parameters as per your AWS settings.

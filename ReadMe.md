@@ -1,4 +1,6 @@
-# SEARS SDK to Query MongoDB using Python to Download Data and Files from SEARS Backend.
+# SEARS SDK 
+The purpose of this SDK is to publish code that will help data scientists to query MongoDB using python so as to bulk download data and files directly from the SEARS backend for aggregated analysis. Case studies 6.1 and 6.2 from our main paper were conducted using this SDK.
+
 
 ## Main SEARS platform
 Please refer to our main SEARS platform repository [here](https://github.com/baskargroup/SEARS/).

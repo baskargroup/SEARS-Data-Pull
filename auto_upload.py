@@ -10,7 +10,7 @@ def upload_experiment(json_file_directory):
     # Load .env file
     load_dotenv(find_dotenv())
 
-    # MONGODB
+    # MONGODB SETTINGS OF SEARS
     MONGODB_HOST = os.getenv("CONN_STRING")
     COLLECTION_NAME = 'productData'
 
@@ -36,20 +36,20 @@ def upload_experiment(json_file_directory):
                     with open(json_file_path, 'r') as file:
                         data = json.load(file)
 
-                    # Insert the data into MongoDB
+                    # Insert the data into MongoDB - Key Step
                     collection.insert_one(data)
-                    print('Data inserted successfully')
+                    print(f'Experiment {json_file_path} inserted successfully')
 
                 except Exception as e:
                     print(e)
+
+            print('\nAll experiments inserted to SEARS successfully')
 
     except Exception as e:
         print(e)
 
     finally:
         client.close()
-
-    print('All data inserted successfully')
 
 
 if __name__ == '__main__':

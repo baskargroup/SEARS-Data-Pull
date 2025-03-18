@@ -36,6 +36,9 @@ def process_thickness(thickness):
 
 
 def connect_to_mongo(db_name, search_criteria, output_file_name):
+
+    os.makedirs('./file_fetch', exist_ok=True)
+
     # Load .env file
     load_dotenv(find_dotenv())
 

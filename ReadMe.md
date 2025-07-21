@@ -21,3 +21,11 @@ Please refer to our main SEARS platform repository [here](https://github.com/bas
 1. Notice the folder ```./uploads``` in the root directory of the project. This folder is used to upload data to MongoDB.
 2. Drop data for an experiment in the folder ```./uploads```. The data should be in the form of a JSON file. 
 3. Run the program `python3 auto_upload.py` to upload the data to MongoDB. The program will automatically upload the data to the MongoDB collection `productData`.
+
+### Manual upload of data to SEARS on a per experiment basis - SOP
+0. Pool all your upload files in a single folder. The files should be in the form of a CSV file. Run `CSV_Validator.ipynb` to validate the CSV files. This will ensure that the files are in the correct format for upload. Address any errors that the validator reports.
+1. Go to the SEARS dashboard.
+2. Click on the "+" button next to any "Experiment". A dialog box will appear.
+3. Navigate to the correct experiment tab in the dialog box. e.g. "Thickness".
+4. Drag and Drop files into the Upload area to upload. You can upload multiple files at once.
+5. Click on the "Save Data" button to finish.

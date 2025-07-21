@@ -9,7 +9,7 @@ Please refer to our main SEARS platform repository [here](https://github.com/bas
 
 0. Copy the `.env` file to the root directory of the project. Update the connection string to use your own MongoDB Atlas connection string. Also update the AWS S3 parameters as per your AWS settings.
 1. Install all requirements using `pip3 install -r requirements.txt`
-2. Run `python3 mongo_connect.py` to download data from MongoDB to a CSV file. Set `search_criteria` and `output_file_name` in the program file.
+2. Run `python3 mongo_connect.py` to download data from MongoDB to a CSV file. Set `search_criteria` and `output_file_name` in the program file. Please note that `mongo_connect.py` has been customized to access our own schema in SEARS. As you adapt SEARS to your own needs, you may need to modify the code to suit your schema. Therefore please use this file as a reference to write your own MongoDB query code. We encourage use of AI agents to achieve this goal.
 3. Run `python3 AWS_Download.py` to download files from AWS S3 to a local directory `./file_fetch/`. All files related to experiments meeting the search criteria will be downloaded.
 4. Run your ML model on the downloaded data and files.
 

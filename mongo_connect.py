@@ -1,3 +1,9 @@
+"""
+Goal : The purpose of the script is to demonstrate to a data scientist a way to pull data directly from the MongoDB database for analysis.
+How to Use it : Needless to say that the script will need changes as the underlying schema undergoes changes. For illustration purposes, we have placed our MongoDB schema in the sample_schema folder. We encourage future users to use the code below as an example and use an AI agent to adapt this code to fit their own schemas in MongoDB.
+"""
+
+
 from dotenv import load_dotenv, find_dotenv
 from pymongo import MongoClient
 import os
@@ -22,6 +28,7 @@ def process_solvents(solvents):
 def process_conductivity(conductivity):
     CON = 0.0
     num_rows = len(conductivity)
+    # We ensure that if multiple readings are present for an experiment, we return the latest reading.
     if num_rows > 0:
         CON = conductivity[num_rows-1]['reading']
     return CON
@@ -30,6 +37,7 @@ def process_conductivity(conductivity):
 def process_thickness(thickness):
     THK = 0.0
     num_rows = len(thickness)
+    # We ensure that if multiple readings are present for an experiment, we return the latest reading.
     if num_rows > 0:
         THK = thickness[num_rows-1]['reading']
     return THK

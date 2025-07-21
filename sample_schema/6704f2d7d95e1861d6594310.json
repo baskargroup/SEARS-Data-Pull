@@ -1,0 +1,118 @@
+{
+  "rowData": {
+    "_id": "6704f2d7d95e1861d6594310",
+    "experiment_name": "Spring24_SolvTemp_JPM_128",
+    "experiment_dt": "2024-10-08T08:49:37.069Z",
+    "experiment_location": "Amassian",
+    "polymer_name": "PBTTT",
+    "polymer_mw": "",
+    "polymer_rr": "",
+    "polymer_batch": "",
+    "polymer_company": "",
+    "solvent": "",
+    "dopant_name": "F4TCNQ",
+    "dopant_batch": "",
+    "dopant_company": "",
+    "loading_polymer": "",
+    "loading_dopant": "",
+    "loading_solvent": "nBA",
+    "temperature": "60",
+    "print_speed": "",
+    "print_voltage": "",
+    "print_head_diameter": "",
+    "exposure_time": "",
+    "substrate_name": "",
+    "substrate_company": "",
+    "annealing_temperature": "90",
+    "annealing_duration": "60",
+    "fab_box": "Air",
+    "fab_humidity": "",
+    "other": "",
+    "uv_vis_nir_files": [
+      {
+        "name": "0ea402b6-4ba4-46db-80df-90b608df3e11_Spring24_Preanneal_Sample128 (1).csv"
+      },
+      {
+        "name": "8ca8add7-3477-4762-8471-6f26fc82dd76_Spring24_Postdope_Sample128 (1).csv"
+      },
+      {
+        "name": "4f5e9626-96b6-4e66-94b2-62f7b529d9ae_Spring24_Postanneal_Sample128 (1).csv"
+      }
+    ],
+    "iv_files": [],
+    "profilometry_files": [],
+    "giwaxs_files": [],
+    "skpm_files": [],
+    "solvents": [
+      { "name": "DCB", "value": "10" },
+      {
+        "name": "Tol",
+        "value": "90",
+        "mol_wt": "",
+        "smiles": "",
+        "hsp_delta_d": "",
+        "hsp_delta_p": "",
+        "hsp_delta_h": ""
+      }
+    ],
+    "thickness": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "621.05",
+        "who": "Nick"
+      }
+    ],
+    "uv_vis_nir": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "Please enter reading",
+        "who": "Please enter your group name",
+        "file": "Please enter file name"
+      }
+    ],
+    "giwaxs": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "Please enter reading",
+        "who": "Please enter your group name",
+        "filetype": "1D or 2D",
+        "file": "Please enter file name"
+      }
+    ],
+    "skpm": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "Please enter reading",
+        "who": "Please enter your group name",
+        "file": "Please enter file name"
+      }
+    ],
+    "iv": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "Please enter reading",
+        "who": "Please enter your group name",
+        "file": "Please enter file name"
+      }
+    ],
+    "profilometry": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "Please enter reading",
+        "who": "Please enter your group name",
+        "file": "Please enter file name"
+      }
+    ],
+    "conductivity": [
+      { "batch": "Please enter batch number", "reading": "7.13", "who": "Nick" }
+    ],
+    "mobility": [
+      {
+        "batch": "Please enter batch number",
+        "reading": "Please enter reading",
+        "who": "Please enter your group name"
+      }
+    ],
+    "user": "naluke@ncsu.edu"
+  }
+}
